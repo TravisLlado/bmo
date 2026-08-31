@@ -6,7 +6,7 @@ Tracks a real-time sine position profile and steps the motor to follow it.
 
 Wiring defaults to M1 (BCM pin numbers, overridable via CLI):
   GPIO 16 → TMC2209 STEP  (Pi header pin 36)
-  GPIO 23 → TMC2209 DIR   (Pi header pin 16)
+  GPIO 26 → TMC2209 DIR   (Pi header pin 37)
   GPIO 7  → TMC2209 nEN   (Pi header pin 26, active LOW, shared)
   3.3V    → TMC2209 VIO + MS1 + MS2  (16x microstepping)
   GND     → TMC2209 GND (share with Pi GND)

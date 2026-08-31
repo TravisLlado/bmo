@@ -5,11 +5,11 @@ sine_four.py — Feed-forward sine wave to all four motors at 100 Hz.
 Each tick: compute target step position from sin(t), issue the
 required steps immediately.  No DMA, no threads — just math + GPIO.
 
-Wiring (BCM, from pinout.md):
-  M1  STEP=16  DIR=23
-  M2  STEP=5   DIR=6
-  M3  STEP=22  DIR=26
-  M4  STEP=12  DIR=4
+Wiring (BCM, from pinout.py):
+  M1  STEP=5   DIR=6
+  M2  STEP=12  DIR=13
+  M3  STEP=19  DIR=16
+  M4  STEP=26  DIR=20
   nEN=7  (shared active-LOW, controls all four drivers)
 
 Examples:
